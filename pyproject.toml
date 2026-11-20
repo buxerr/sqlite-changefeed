@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,9 +8,15 @@ version = "0.1.0"
 description = "Transactional SQLite change capture and resumable peer apply adapter."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["sqlite-cdc", "sqlite-changefeed", "change-data-capture", "sqlite-replication", "local-first", "jsonl", "python"]
 authors = [{ name = "buxerr" }]
 dependencies = []
+
+[project.urls]
+Repository = "https://github.com/buxerr/sqlite-changefeed"
+Issues = "https://github.com/buxerr/sqlite-changefeed/issues"
 
 [project.scripts]
 sqlite-changefeed = "sqlite_changefeed.cli:main"
